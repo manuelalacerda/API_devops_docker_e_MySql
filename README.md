@@ -20,7 +20,7 @@ Este é um projeto simples utilizando **Docker** para containerização e **MySQ
 1. Clone o repositório:
 
 ```bash
-git clone <url-do-repositorio>
+[git clone https://github.com/manuelalacerda/API_devops_docker_e_MySql.git]
 cd <nome-do-projeto>
 ```
 
