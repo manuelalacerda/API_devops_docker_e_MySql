@@ -12,7 +12,6 @@ Este é um projeto simples utilizando **Docker** para containerização e **MySQ
 ## 📦 Tecnologias utilizadas
 
 * Docker
-* Docker Compose
 * MySQL
 * API (backend)
 
@@ -23,12 +22,6 @@ Este é um projeto simples utilizando **Docker** para containerização e **MySQ
 ```bash
 git clone <url-do-repositorio>
 cd <nome-do-projeto>
-```
-
-2. Suba os containers com Docker:
-
-```bash
-docker-compose up -d
 ```
 
 3. Verifique se os containers estão rodando:
@@ -45,10 +38,32 @@ A API estará disponível em:
 http://20.164.205.21:8080/usuarios
 ```
 
+## 🌐 Acessando o banco de dados
+
+```
+docker exedocker exec -it mysql_vendas mysql -u root -p
+```
+
+```
+root
+```
+
+```
+USE vendas_db;
+```
+
+```
+INSERT INTO usuario (nome, email) VALUES ('Manuela Soares', 'manu@fiap.com.br');
+```
+
+```
+SELECT * FROM usuario;
+```
+
+
 ## 🛠️ Banco de Dados
 
 * Banco: MySQL
 * Configurado via Docker
-* As credenciais estão definidas no `docker-compose.yml`
 
 Feito para fins acadêmicos 🚀
